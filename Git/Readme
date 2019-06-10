@@ -1,0 +1,4 @@
+Git init
+Git status
+Git add / git add app.js -- add to track
+git commit -m "Message"

@@ -1,0 +1,47 @@
+<% include partials/header %>
+<!--
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">YelpCaml</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href ="#">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href ="#">Sigup</a></li>
+                <li class="nav-item"><a class="nav-link" href ="#">Logout</a></li>
+            </ul>
+            
+        </div>
+        
+    </div>
+    
+</nav>
+-->
+ <div class="container">
+    <header class="jumbotron">
+        <div class="container">
+        <h1>Welcome to YelpCaml</h1>
+        <p> View our hand-picked campgrounds from all over the world</p>
+           <p ><a class="btn btn-primary btn-lg" href="/campgrounds/new">Add New Camp Ground</a></p> 
+           </div>
+    </header>
+   
+
+    <div class="row" >
+        <% campgrounds.forEach(function(campground){
+            %>
+            <div class="col-md-3">
+                <div class="rounded float-right">
+                    <img class= "img-fluid img-thumbnail" src="<%=campground.image %>">
+                    <div class="caption"><h4><%= campground.name%></h4></div>
+                </div>
+            </div>
+            <%
+        });
+        %>
+    </div>
+</div>
+
+<% include partials/footer %>
+
