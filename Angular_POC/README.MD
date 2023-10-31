@@ -12,16 +12,31 @@ Install Angular CLI
 ---------------------------------------------------------
 Create new Angular Application 
 
->ng new appointment-app 
+>ng new <application-name> appointment-app 
 # ignore routig for this press N and css default
 
 # run the ng app from app folder and -o open in new browser 
-> ng serve -o
+> ng serve -o; ng serve --open
 
 # Create a Component
->ng g component appointment-list
+>ng generate component <component-name>appointment-list
+or
+>ng g c <component-name>
 
-# 
+# Create a Service
+>ng generate service <service-name>
+or
+ng g s <service-name> 
+
+#Build your application for production, create a dist/folder with output
+
+>ng build
+
+# check application for outdated dependencies or also to update
+>ng update
+
+
+
 >ng generate interface models/appointment
 ---------------------------------------------------------
 
