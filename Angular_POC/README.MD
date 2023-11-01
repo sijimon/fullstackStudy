@@ -43,3 +43,15 @@ ng g s <service-name>
 # Install Bootstrap local to project 
 npm install bootstrap@5.3
 
+# add below line to styles.css file in src folder
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+--------------------------------------------------------------
+
+
+# Generate Module
+
+>ng generate module home
+# create and attach home module to home component
+>ng generate component home --module=home
