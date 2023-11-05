@@ -55,3 +55,50 @@ npm install bootstrap@5.3
 >ng generate module home
 # create and attach home module to home component
 >ng generate component home --module=home
+
+-------------------------------------------------------------
+
+# Create new project for animal-paintings-shop
+ng new animal-paintings-shop [y for routing and default css]
+
+# generate a product module
+ng generate module product
+
+# generate product service and connect to the product module
+ng generate service product/product
+
+# generate product-list component and connect with the product module
+ng generate component product/product-list
+
+# in app.module.ts import ProductModule , HttpClientModule
+
+# create a new class product 
+ng generate class modules/product
+# [You can either use a class or interface. Typically you want to use an interface. As a general rule of thumb: As long as you don't have to create an instance of a specific type, pick an interface over a class.]
+
+# update app-routing-module.ts 
+
+# generate environments config file
+ng generate environments
+# [add mockoon url parameter; apiUrl: 'http://localhost:3000']
+# start server with configuration 
+ng serve --configuration=development
+
+# Angular Meterial 
+ng add @angular/material
+
+# Apply Angular Meterial style by adding belo line in style.css @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+# Add Angular Flex Layout
+npm i -s @angular/flex-layout @angular/cdk
+
+
+# Update product-list component css for transform and transition
+
+# Add navigation bar using toolbar from Angular Meterial
+
+# Create new Cart module and service
+ng g module cart
+ng g service cart/cart
+ng g component cart/cart-view
+
